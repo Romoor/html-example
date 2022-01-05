@@ -1,42 +1,141 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Ooooh Cool Website!</title>
-        <style>
-            .hero-image {
-                margin-top: 20px;
-                margin-right: 0px;
-                background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-girl-cat-names-1606245046.jpg?crop=0.668xw:1.00xh;0.126xw,0&resize=640:*);
-                height: 80vh;
-                width: 100vw;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
-                z-index: -1;}
 
-            h1 {
-                color: rgb(255, 0, 128);
-                text-align: center;
-                font-weight: bolder;
-            } 
-        </style>
-    </head>
-    <body style="background-image: url(https://m.media-amazon.com/images/M/MV5BOTRiMDc3ODQtNWY0YS00YTFhLWI4ZDAtODQwZDM1NTA5NzkxXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_QL75_UX500_CR0,47,500,281_.jpg);">
-        <div class="hero-image"></div>
-        <h1 style="margin-left: 20px;
+<head>
+    <title>Ooooh Cool Website!</title>
+    <style>
+        /* Navbar container */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgb(12, 5, 71);
+            font-family: Arial;
+        }
+
+        /* Links inside the navbar */
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Dropdown button */
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            /* Important for vertical align on mobile phones */
+            margin: 0;
+            /* Important for vertical align on mobile phones */
+        }
+
+        navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(7, 141, 14);
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* Add a grey background color to dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .hero-image {
+            margin-top: 20px;
+            margin-right: 0px;
+            background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-girl-cat-names-1606245046.jpg?crop=0.668xw:1.00xh;0.126xw,0&resize=640:*);
+            height: 80vh;
+            width: 100vw;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            z-index: -1;
+        }
+
+        h1 {
+            color: rgb(255, 0, 128);
+            text-align: center;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body
+    style="background-image: url(https://m.media-amazon.com/images/M/MV5BOTRiMDc3ODQtNWY0YS00YTFhLWI4ZDAtODQwZDM1NTA5NzkxXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_QL75_UX500_CR0,47,500,281_.jpg);">
+
+    <div class="navbar">
+        <a href="lolexamplelol.html">Example Page</a>
+        <a href="page1.html">Page 1</a>
+        <a href="page2.html">Page 2</a>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+                Dropdown
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="page3.html">Page 3</a>
+                <a href="page4.html">Page 4</a>
+                <a href="page5.html">Page 5</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-image"></div>
+
+    <h1 style="margin-left: 20px;
         background-color: black;">
         Woah that's one cool header</h1>
-        <a href="https://www.google.com">
-            <img src="https://www.ikea.com/us/en/images/products/jaettelik-soft-toy-dinosaur-dinosaur-tyrannosaurus-rex__0814793_pe772712_s5.jpg"
+
+    <a href="https://www.google.com">
+        <img src="https://www.ikea.com/us/en/images/products/jaettelik-soft-toy-dinosaur-dinosaur-tyrannosaurus-rex__0814793_pe772712_s5.jpg"
             alt="T-Rex" width="400" height="400"></img>
-        </a>
-        <p style="font-family:'Courier New', Courier, monospace;
+    </a>
+
+    <p style="font-family:'Courier New', Courier, monospace;
         font-size: 75px;
         text-align: center;
         margin-right: 60px;">
-        <b>And this is all the <sup>very</sup>important information that makes 
+        <b>And this is all the <sup>very</sup>important information that makes
             up the bulk of the website</b>
-        </p>
-    </body>
+    </p>
+</body>
+
 </html>
